@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "final-exam-module5"
+  "defaultProject": "final-exam-module5",
+  "cli": {
+    "analytics": "3211335e-121f-4f98-bdb3-6cf85ad9985f"
+  }
 }

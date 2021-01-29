@@ -1,0 +1,22 @@
+<table class="table table-hover">
+  <thead>
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col">Title</th>
+    <th scope="col">Author</th>
+    <th scope="col"></th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let book of books">
+    <th>{{book.id}}</th>
+    <td><a (click)="detail(book.id)">{{book.title}}</a></td>
+    <td>{{book.author}}</td>
+    <td>
+      <button class="btn btn-outline-success" (click)="editB(book.id)">Edit</button>
+      |
+      <button class="btn btn-outline-danger" (click)="deleteB(book.id)">Delete</button>
+    </td>
+  </tr>
+  </tbody>
+</table>

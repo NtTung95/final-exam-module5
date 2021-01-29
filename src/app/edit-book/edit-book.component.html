@@ -1,0 +1,18 @@
+<h1>Edit</h1>
+
+<form [formGroup]="editForm" (ngSubmit)="edit()">
+  <div class="mb-3">
+    <label class="form-label">Title</label>
+    <input type="text"  class="form-control" formControlName="title"/>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Author</label>
+    <input type="text"  class="form-control" formControlName="author"/>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Description</label>
+    <textarea  type="text"  class="form-control" formControlName="description"></textarea>
+  </div>
+  <button class="btn btn-outline-primary" type="submit" [disabled]="!editForm.valid">Edit</button>
+  <a class="btn btn-outline-danger ml-3" routerLink="/books">Cancel</a>
+</form>
